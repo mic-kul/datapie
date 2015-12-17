@@ -40,3 +40,12 @@ Read here on how to import in Grafana: http://docs.grafana.org/reference/export_
 # Todo
 
 - Verify [newrelic/node-newrelic](https://github.com/newrelic/node-newrelic) is supported.
+
+# Tips
+
+#### Container IP & Ports
+
+*OSX:* If you are using OSX (boot2docker) you will most likely access the container through 127.0.0.1.
+You can use [VirtualBox port forwarding](https://github.com/boot2docker/boot2docker/blob/master/doc/WORKAROUNDS.md#port-forwarding) to access the container on a port forward any conflicting port.
+
+*Linux:* You can access the container by it's IP: `$ docker ps -a datapie | grep IP`.
